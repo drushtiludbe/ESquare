@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mission Records | ESquare</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="stars" aria-hidden="true"></div>
+    <div class="space-background" aria-hidden="true"></div>
+
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+            <span class="brand-mark">
+                E<sup>Square</sup>
+            </span>
+        </a>
+
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a class="active" href="explore.html">Explore</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main class="page-shell story-shell" id="storyContent">
+
+        <a class="back-link" href="explore.html">
+            ← BACK TO EXPLORE
+        </a>
+
+        <section class="planet-display" id="storyHero">
+
+            <img
+                id="planetImage"
+                src="MarsBG.jpeg"
+                alt="Selected destination"
+            >
+
+            <div class="planet-overlay">
+
+                <p class="eyebrow" id="storyKicker">
+                    DESTINATION 01 / MARS
+                </p>
+
+                <h1 class="pixel-title" id="storyTitle">
+                    MARS
+                </h1>
+
+                <p class="planet-caption" id="storyTagline">
+                    MISSION AND EQUIPMENT RECORDS
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="story-experience">
+
+            <div class="story-track" id="storyTrack">
+
+                <!-- SLIDE 1: OVERVIEW -->
+
+                <article class="story-box">
+
+                    <span class="story-number">
+                        RECORD 001
+                    </span>
+
+                    <p class="eyebrow">
+                        DESTINATION OVERVIEW
+                    </p>
+
+                    <h2 id="overviewHeading">
+                        Mars Mission Records
+                    </h2>
+
+                    <p id="overviewText">
+                        Mission information will appear here.
+                    </p>
+
+                    <div class="mission-panel">
+
+                        <p class="eyebrow">
+                            RECORD SUMMARY
+                        </p>
+
+                        <dl id="missionSummary"></dl>
+
+                    </div>
+
+                    <span class="story-prompt">
+                        NEXT SLIDE →
+                    </span>
+
+                </article>
+
+
+                <!-- SLIDE 2: MISSIONS -->
+
+                <article class="story-box">
+
+                    <span class="story-number">
+                        RECORD 002
+                    </span>
+
+                    <p class="eyebrow">
+                        MISSION ARCHIVE
+                    </p>
+
+                    <h2>
+                        Missions to <span id="missionDestination">Mars</span>
+                    </h2>
+
+                    <p id="missionIntro">
+                        Selected missions and their objectives.
+                    </p>
+
+                    <div id="missionList" class="record-list"></div>
+
+                    <span class="story-prompt">
+                        NEXT SLIDE →
+                    </span>
+
+                </article>
+
+
+                <!-- SLIDE 3: DISCARDED EQUIPMENT -->
+
+                <article class="story-box">
+
+                    <span class="story-number">
+                        RECORD 003
+                    </span>
+
+                    <p class="eyebrow">
+                        EQUIPMENT ARCHIVE
+                    </p>
+
+                    <h2>
+                        Discarded Equipment
+                    </h2>
+
+                    <p id="equipmentIntro">
+                        Equipment deliberately left behind or disposed of
+                        during missions.
+                    </p>
+
+                    <div class="mission-panel">
+
+                        <p class="eyebrow">
+                            EQUIPMENT RECORDS
+                        </p>
+
+                        <dl id="equipmentSummary"></dl>
+
+                    </div>
+
+                    <div id="equipmentList" class="record-list"></div>
+
+                    <p id="equipmentEmpty" hidden>
+                        No qualifying discarded equipment records are
+                        included for this destination.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <!-- ORIGINAL SLIDE NAVIGATION -->
+
+            <div class="story-navigation">
+
+                <button type="button"
+                        id="prevPanel"
+                        aria-label="Previous slide">
+                    ←
+                </button>
+
+                <span id="storyCounter">
+                    01 / 03
+                </span>
+
+                <button type="button"
+                        id="nextPanel"
+                        aria-label="Next slide">
+                    →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESTINATION NAVIGATION -->
+
+        <div class="story-bottom">
+
+            <a id="prevStory" href="explore.html">
+                ← SCROLL TO PREVIOUS FILE
+            </a>
+
+            <a id="nextStory" href="explore.html">
+               SCROLL TO NEXT FILE →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <span>ESQUARE © 2026</span>
+
+        <span>MISSION AND EQUIPMENT RECORDS</span>
+
+    </footer>
+
+</body>
+</html>
