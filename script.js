@@ -94,47 +94,47 @@ const destinations = {
             {
                 name: "Mars Pathfinder lander",
                 description:
-                    "The stationary lander remained on Mars after the 1997 mission."
+                    "The stationary NASA lander remained on Mars after the 1997 mission."
             },
             {
                 name: "Sojourner rover",
                 description:
-                    "The small rover was deployed by Pathfinder and remained on the Martian surface."
+                    "The small NASA rover was deployed by Pathfinder and remained on the Martian surface."
             },
             {
                 name: "Viking 1 lander",
                 description:
-                    "The lander remained at its landing site after its mission ended."
+                    "The NASA lander remained at its landing site after its mission ended."
             },
             {
                 name: "Viking 2 lander",
                 description:
-                    "The lander remained on Mars after completing its scientific operations."
+                    "The NASA lander remained on Mars after completing its scientific operations."
             },
             {
                 name: "Spirit rover",
                 description:
-                    "The rover became stationary in 2009 and its mission ended in 2011."
+                    "The NASA rover became stationary in 2009 and its mission ended in 2011."
             },
             {
                 name: "Opportunity rover",
                 description:
-                    "The rover remained on Mars after its mission ended in 2019."
+                    "The NASA rover remained on Mars after its mission ended in 2019."
             },
             {
                 name: "Phoenix lander",
                 description:
-                    "The lander remained at its polar landing site after its mission ended."
+                    "The NASA lander remained at its polar landing site after its mission ended."
             },
             {
                 name: "InSight lander",
                 description:
-                    "The stationary lander remained on Mars after its mission ended in 2022."
+                    "The stationary NASA lander remained on Mars after its mission ended in 2022."
             },
             {
                 name: "Perseverance landing hardware",
                 description:
-                    "The heat shield, backshell and descent-stage hardware were separated during landing and left on Mars."
+                    "The NASA mission's heat shield, backshell and descent-stage hardware were separated during landing and left on Mars."
             }
         ],
 
@@ -149,7 +149,7 @@ const destinations = {
         image: "moonBg.jpg",
 
         overview:
-            "The Moon has been visited by crewed and robotic missions. Landers, scientific instruments, tools and other equipment have been left at several landing sites. Some objects were deliberately sent into lunar impact trajectories.",
+            "The Moon has been visited by crewed and robotic missions. NASA landers, scientific instruments, tools and other equipment have been left at several landing sites. Some Apollo hardware was deliberately sent into lunar impact trajectories.",
 
         missions: [
             {
@@ -208,42 +208,27 @@ const destinations = {
             {
                 name: "Apollo lunar module descent stages",
                 description:
-                    "The descent stages of the Apollo lunar modules were left at their landing sites."
+                    "The descent stages of NASA's Apollo lunar modules were left at their landing sites."
             },
             {
                 name: "Apollo Lunar Roving Vehicles",
                 description:
-                    "The rovers used during Apollo 15, 16 and 17 remained on the lunar surface."
+                    "The NASA rovers used during Apollo 15, 16 and 17 remained on the lunar surface."
             },
             {
                 name: "Apollo ALSEP instruments",
                 description:
-                    "Scientific experiment packages were deployed at Apollo landing sites and left there."
+                    "NASA's Apollo Lunar Surface Experiments Packages were deployed at Apollo landing sites and left there."
             },
             {
                 name: "Surveyor landers",
                 description:
-                    "Surveyor spacecraft that completed their missions remained on the lunar surface."
-            },
-            {
-                name: "Luna 2",
-                description:
-                    "The spacecraft intentionally impacted the lunar surface in 1959."
+                    "NASA Surveyor spacecraft that completed their missions remained on the lunar surface."
             },
             {
                 name: "Apollo ascent stages",
                 description:
-                    "Several Apollo lunar module ascent stages were later deliberately directed to impact the Moon."
-            },
-            {
-                name: "Chandrayaan-3 Vikram lander",
-                description:
-                    "The lander completed its surface mission and remained at the lunar landing site."
-            },
-            {
-                name: "Chandrayaan-3 Pragyan rover",
-                description:
-                    "The rover completed its surface operations and was left at the landing site."
+                    "Some Apollo lunar module ascent stages were deliberately directed to impact the Moon; this does not mean every ascent stage followed that outcome."
             }
         ],
 
@@ -258,7 +243,7 @@ const destinations = {
         image: "SaturnBg.jpg",
 
         overview:
-            "Saturn has been studied by flyby spacecraft and the Cassini-Huygens mission. Cassini deliberately ended its mission by entering Saturn's atmosphere. Huygens landed on Titan, one of Saturn's moons.",
+            "Saturn has been studied by flyby spacecraft and the Cassini-Huygens mission. NASA's Cassini spacecraft deliberately ended its mission by entering Saturn's atmosphere. Huygens was an ESA probe that landed on Titan.",
 
         missions: [
             {
@@ -285,14 +270,9 @@ const destinations = {
 
         equipment: [
             {
-                name: "Huygens probe",
-                description:
-                    "The probe landed on Titan in January 2005 and remained on its surface after its mission."
-            },
-            {
                 name: "Cassini spacecraft",
                 description:
-                    "Cassini was deliberately sent into Saturn's atmosphere on 15 September 2017 to end the mission and reduce contamination risk to its moons."
+                    "NASA's Cassini spacecraft was deliberately sent into Saturn's atmosphere on 15 September 2017 to end the mission and reduce contamination risk to its moons."
             }
         ],
 
@@ -307,7 +287,7 @@ const destinations = {
         image: "SunBg.jpg",
 
         overview:
-            "Solar missions use spacecraft and instruments to study the Sun's atmosphere, magnetic field and solar wind. The Sun is not a solid landing destination. The records below distinguish scientific missions from equipment deliberately disposed of.",
+            "Solar missions use spacecraft and instruments to study the Sun's atmosphere, magnetic field and solar wind. The Sun is not a solid landing destination. No equipment is currently listed here under the archive's destination-based criteria.",
 
         missions: [
             {
@@ -355,7 +335,7 @@ const destinations = {
         image: "astBg.jpg",
 
         overview:
-            "Asteroid missions have mapped small bodies, collected samples and tested ways to change an asteroid's motion. Some missions released landers or impactors, while sample-return capsules were brought back to Earth.",
+            "Asteroid missions have mapped small bodies, collected samples and tested ways to change an asteroid's motion. NASA's NEAR Shoemaker spacecraft landed on Eros, while DART deliberately impacted Dimorphos. Sample-return capsules brought back to Earth are not classified as equipment left on an asteroid.",
 
         missions: [
             {
@@ -394,22 +374,12 @@ const destinations = {
             {
                 name: "NEAR Shoemaker",
                 description:
-                    "The spacecraft was deliberately placed on the surface of asteroid Eros at the end of its mission in 2001."
-            },
-            {
-                name: "Hayabusa2 MINERVA-II rovers",
-                description:
-                    "Small hopping rovers were deployed onto asteroid Ryugu and remained there after their operations."
-            },
-            {
-                name: "Hayabusa2 MASCOT lander",
-                description:
-                    "The lander operated on Ryugu's surface before its battery was exhausted."
+                    "NASA's spacecraft was deliberately placed on the surface of asteroid Eros at the end of its mission in 2001."
             },
             {
                 name: "DART impactor",
                 description:
-                    "The spacecraft deliberately impacted Dimorphos in 2022 as part of an asteroid-deflection test."
+                    "NASA's spacecraft deliberately impacted Dimorphos in 2022 as part of an asteroid-deflection test."
             }
         ],
 
@@ -609,7 +579,7 @@ if (storyTitle) {
 
     setText(
         "equipmentIntro",
-        "This section includes equipment deliberately left behind, deployed onto a destination, or disposed of as part of a mission. Merely inactive spacecraft are not automatically included."
+        "This NASA equipment archive includes hardware deliberately left behind, deployed onto a destination, or disposed of as part of a mission. Merely inactive spacecraft are not automatically included."
     );
 
     displayDefinitionList("equipmentSummary", [
@@ -653,9 +623,6 @@ if (storyTitle) {
 }
 
 
-
-
-   
 
 
 // ==========================================
