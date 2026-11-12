@@ -1,0 +1,413 @@
+
+/* =====================================
+   ESQUARE EQUIPMENT RECORD
+   Original ESquare colour palette
+===================================== */
+
+.equipment-record-page {
+    min-height: 100vh;
+    color: var(--text, #F2F2F2);
+    font-family: var(--mono, 'Space Mono', monospace);
+}
+
+.equipment-record-shell {
+    position: relative;
+    z-index: 2;
+
+    width: min(1180px, 92%);
+    margin: 34px auto 55px;
+}
+
+.equipment-back {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    color: var(--green, #8BFF65);
+    font: 700 10px var(--mono, monospace);
+    letter-spacing: 1.5px;
+    text-decoration: none;
+}
+
+.equipment-back:hover {
+    color: var(--mint, #C5FFA8);
+}
+
+/* Main game window */
+
+.game-record-window {
+    padding: clamp(14px, 2.5vw, 30px);
+
+    color: #F2F2F2;
+    background: rgba(0, 0, 0, 0.96);
+
+    border: 3px solid #8BFF65;
+
+    outline: 4px solid #18351e;
+
+    box-shadow:
+        0 12px 0 rgba(0, 0, 0, 0.8),
+        0 0 0 8px rgba(0, 0, 0, 0.7);
+
+    font-family: var(--mono, 'Space Mono', monospace);
+}
+
+/* Window header */
+
+.game-window-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    padding-bottom: 14px;
+
+    border-bottom: 2px solid rgba(139, 255, 101, 0.4);
+
+    color: #888;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+.window-dots {
+    display: flex;
+    gap: 5px;
+}
+
+.window-dots i {
+    width: 9px;
+    height: 9px;
+    display: block;
+    background: #8BFF65;
+    border: 1px solid #C5FFA8;
+}
+
+.window-dots i:nth-child(2) {
+    background: #C5FFA8;
+}
+
+.window-dots i:nth-child(3) {
+    background: #555;
+}
+
+.window-live {
+    color: #8BFF65;
+}
+
+/* Equipment title */
+
+.equipment-record-heading {
+    padding: 23px 0 20px;
+    text-align: center;
+
+    border-bottom: 2px dashed rgba(139, 255, 101, 0.4);
+}
+
+.equipment-record-kicker {
+    color: #C5FFA8;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.equipment-record-heading h1 {
+    margin: 10px 0;
+
+    color: #8BFF65;
+    font-family: var(--pixel, monospace);
+    font-size: clamp(20px, 4vw, 34px);
+    line-height: 1.7;
+}
+
+.equipment-record-heading > p:last-child {
+    color: #888;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+/* Image and information layout */
+
+.equipment-record-layout {
+    display: grid;
+    grid-template-columns: minmax(250px, 0.88fr) minmax(0, 1.35fr);
+    gap: 23px;
+
+    padding-top: 24px;
+    align-items: start;
+}
+
+/* Equipment image */
+
+.equipment-image-column {
+    padding: 12px;
+
+    background: #050505;
+    border: 2px solid #8BFF65;
+
+    box-shadow: 5px 5px 0 #18351e;
+}
+
+.pixel-panel-label {
+    padding: 4px 4px 11px;
+
+    color: #8BFF65;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.equipment-image-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 245px;
+    padding: 8px;
+
+    background: #000;
+    border: 1px solid rgba(139, 255, 101, 0.5);
+}
+
+.equipment-image-frame img {
+    display: block;
+    width: 100%;
+    max-height: 370px;
+    min-height: 220px;
+
+    object-fit: contain;
+}
+
+.equipment-image-caption {
+    padding: 9px 3px;
+
+    color: #888;
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+.equipment-location-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    margin-top: 8px;
+    padding: 12px;
+
+    background: #050505;
+    border: 1px dashed #8BFF65;
+}
+
+.equipment-location-panel span,
+.equipment-stat span {
+    color: #8BFF65;
+    font-size: 9px;
+    letter-spacing: 1.3px;
+}
+
+.equipment-location-panel strong {
+    color: #C5FFA8;
+    font-size: 12px;
+}
+
+/* Information boxes */
+
+.equipment-info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.game-info-box {
+    padding: 15px 16px;
+
+    background: #050505;
+    border: 2px solid rgba(139, 255, 101, 0.65);
+
+    box-shadow: 4px 4px 0 #18351e;
+}
+
+.game-info-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding-bottom: 9px;
+
+    border-bottom: 1px dashed rgba(139, 255, 101, 0.4);
+}
+
+.game-info-heading span {
+    display: grid;
+    place-items: center;
+    flex: 0 0 27px;
+    height: 27px;
+
+    color: #000;
+    background: #8BFF65;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.game-info-heading h2 {
+    margin: 0;
+
+    color: #8BFF65;
+    font-family: var(--pixel, monospace);
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+.game-info-box p {
+    margin: 11px 0 0;
+
+    color: #F2F2F2;
+    font-size: 12px;
+    line-height: 1.85;
+}
+
+.status-info-box {
+    background: #071007;
+    border-color: #C5FFA8;
+}
+
+/* Mission statistics */
+
+.equipment-stats {
+    margin-top: 27px;
+    padding: 17px;
+
+    background: #050505;
+    border: 2px solid #8BFF65;
+}
+
+.stats-title {
+    margin-bottom: 15px;
+
+    color: #8BFF65;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.stats-title span {
+    color: #C5FFA8;
+}
+
+.equipment-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 11px;
+}
+
+.equipment-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    min-width: 0;
+    padding: 13px;
+
+    background: #000;
+    border: 1px solid rgba(139, 255, 101, 0.4);
+}
+
+.equipment-stat strong {
+    color: #F2F2F2;
+    font-size: 12px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+
+.equipment-record-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    margin-top: 22px;
+    padding-top: 15px;
+
+    border-top: 2px dashed rgba(139, 255, 101, 0.4);
+
+    color: #888;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.equipment-record-footer a,
+.record-not-found a {
+    color: #8BFF65;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.equipment-record-footer a:hover,
+.record-not-found a:hover {
+    color: #C5FFA8;
+}
+
+/* Missing record */
+
+.record-not-found {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.record-not-found h1 {
+    color: #8BFF65;
+}
+
+.record-not-found p {
+    color: #F2F2F2;
+    line-height: 1.8;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+    .equipment-record-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .equipment-image-column {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .equipment-image-frame img {
+        max-height: 330px;
+    }
+}
+
+@media (max-width: 520px) {
+    .equipment-record-shell {
+        width: 91%;
+        margin-top: 22px;
+    }
+
+    .game-window-top {
+        justify-content: center;
+    }
+
+    .equipment-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .equipment-record-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .equipment-image-frame {
+        min-height: 190px;
+    }
+
+    .equipment-image-frame img {
+        min-height: 180px;
+    }
+}

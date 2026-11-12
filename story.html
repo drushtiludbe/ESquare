@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +8,12 @@
     <title>Mission Records | ESquare</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="story-equipment.css">
+
     <script defer src="script.js"></script>
+
+    <script defer src="story-equipment.js"></script>
 </head>
 
 <body>
@@ -25,10 +29,7 @@
             </span>
         </a>
 
-        <button class="menu-toggle"
-                type="button"
-                aria-label="Toggle navigation"
-                aria-expanded="false">
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
             ☰
         </button>
 
@@ -49,11 +50,7 @@
 
         <section class="planet-display" id="storyHero">
 
-            <img
-                id="planetImage"
-                src="MarsBG.jpeg"
-                alt="Selected destination"
-            >
+            <img id="planetImage" src="MarsBG.jpeg" alt="Selected destination">
 
             <div class="planet-overlay">
 
@@ -108,47 +105,17 @@
                     </div>
 
                     <span class="story-prompt">
-                        NEXT SLIDE →
+                      SCROLL TO NEXT SLIDE →
                     </span>
 
                 </article>
 
-
-                <!-- SLIDE 2: MISSIONS -->
+                <!-- SLIDE 2: DISCARDED EQUIPMENT -->
 
                 <article class="story-box">
 
                     <span class="story-number">
                         RECORD 002
-                    </span>
-
-                    <p class="eyebrow">
-                        MISSION ARCHIVE
-                    </p>
-
-                    <h2>
-                        Missions to <span id="missionDestination">Mars</span>
-                    </h2>
-
-                    <p id="missionIntro">
-                        Selected missions and their objectives.
-                    </p>
-
-                    <div id="missionList" class="record-list"></div>
-
-                    <span class="story-prompt">
-                        NEXT SLIDE →
-                    </span>
-
-                </article>
-
-
-                <!-- SLIDE 3: DISCARDED EQUIPMENT -->
-
-                <article class="story-box">
-
-                    <span class="story-number">
-                        RECORD 003
                     </span>
 
                     <p class="eyebrow">
@@ -190,9 +157,7 @@
 
             <div class="story-navigation">
 
-                <button type="button"
-                        id="prevPanel"
-                        aria-label="Previous slide">
+                <button type="button" id="prevPanel" aria-label="Previous slide">
                     ←
                 </button>
 
@@ -200,9 +165,7 @@
                     01 / 03
                 </span>
 
-                <button type="button"
-                        id="nextPanel"
-                        aria-label="Next slide">
+                <button type="button" id="nextPanel" aria-label="Next slide">
                     →
                 </button>
 
@@ -220,7 +183,7 @@
             </a>
 
             <a id="nextStory" href="explore.html">
-               SCROLL TO NEXT FILE →
+                SCROLL TO NEXT FILE →
             </a>
 
         </div>
@@ -237,4 +200,5 @@
     </footer>
 
 </body>
+
 </html>

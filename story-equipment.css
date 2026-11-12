@@ -1,0 +1,127 @@
+
+/* =====================================
+   ESQUARE STORY - EQUIPMENT ARCHIVE
+   Matching original black + green theme
+===================================== */
+
+#equipmentList {
+    gap: 14px;
+}
+
+#equipmentList .equipment-record-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+#equipmentList .record-item {
+    position: relative;
+    padding: 15px;
+
+    background: #050505;
+    border: 2px solid rgba(139, 255, 101, 0.45);
+    border-radius: 0;
+
+    box-shadow: 4px 4px 0 #18351e;
+
+    transition: 0.25s ease;
+}
+
+#equipmentList .equipment-record-link:hover .record-item,
+#equipmentList .equipment-record-link:focus-visible .record-item {
+    transform: translateY(-4px);
+    background: #101810;
+    border-color: #8BFF65;
+    outline: none;
+}
+
+#equipmentList .record-item h3 {
+    color: #8BFF65;
+    font-family: var(--pixel);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+#equipmentList .record-item p {
+    color: #F2F2F2;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+#equipmentList .equipment-open-prompt {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 11px;
+
+    color: #000;
+    background: #8BFF65;
+    border: 1px solid #C5FFA8;
+
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#equipmentList .equipment-record-link:hover .equipment-open-prompt {
+    background: #C5FFA8;
+}
+
+/* Equipment slide */
+
+.story-box:has(#equipmentList) {
+    background: rgba(5, 5, 5, 0.97);
+    border: 3px solid #8BFF65;
+
+    box-shadow:
+        0 0 0 4px #080808,
+        0 0 0 6px #286d38;
+
+    color: #F2F2F2;
+}
+
+.story-box:has(#equipmentList) h2 {
+    color: #8BFF65;
+    font-family: var(--pixel);
+    font-size: 18px;
+    line-height: 1.8;
+    text-shadow: none;
+}
+
+.story-box:has(#equipmentList) .story-number {
+    color: #C5FFA8;
+}
+
+.story-box:has(#equipmentList) .eyebrow {
+    color: #8BFF65;
+}
+
+.story-box:has(#equipmentList) p {
+    color: #F2F2F2;
+}
+
+.story-box:has(#equipmentList) .mission-panel {
+    background: #050505;
+    border: 1px solid rgba(139, 255, 101, 0.4);
+}
+
+.story-box:has(#equipmentList) .mission-panel dt {
+    color: #888;
+}
+
+.story-box:has(#equipmentList) .mission-panel dd {
+    color: #C5FFA8;
+}
+
+.story-box:has(#equipmentList) .story-prompt {
+    color: #8BFF65;
+}
+
+@media (max-width: 600px) {
+    #equipmentList .record-item {
+        padding: 12px;
+    }
+
+    #equipmentList .record-item h3 {
+        font-size: 10px;
+    }
+}
