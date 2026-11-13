@@ -1,95 +1,274 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Equipment Record | ESquare</title>
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="equipment.css">
+
   <script defer src="script.js"></script>
   <script defer src="equipment.js"></script>
+  <script defer src="equipment-tilt.js"></script>
 </head>
+
 <body class="equipment-record-page">
+
   <div class="stars" aria-hidden="true"></div>
   <div class="space-background" aria-hidden="true"></div>
 
   <header class="site-header equipment-site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">E<sup>Square</sup></span></a>
-    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <a class="brand" href="index.html">
+      <span class="brand-mark">E<sup>Square</sup></span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Toggle navigation"
+      aria-expanded="false">
+      ☰
+    </button>
+
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a class="active" href="explore.html">Explore</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
+
   </header>
 
   <main class="equipment-record-shell" id="equipmentRecord">
-    <a class="equipment-back" id="equipmentBack" href="story.html?place=mars">← RETURN TO DESTINATION FILE</a>
+
+    <a
+      class="equipment-back"
+      id="equipmentBack"
+      href="story.html?place=mars">
+      ← RETURN TO DESTINATION FILE
+    </a>
 
     <section class="game-record-window">
+
       <div class="game-window-top">
-        <span class="window-dots"><i></i><i></i><i></i></span>
+
+        <span class="window-dots">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+
         <span>ESQUARE // FIELD ARCHIVE</span>
+
         <span class="window-live">● RECORD OPEN</span>
+
       </div>
 
       <div class="equipment-record-heading">
-        <p class="equipment-record-kicker" id="equipmentKicker">EQUIPMENT RECORD / 001</p>
+
+        <p
+          class="equipment-record-kicker"
+          id="equipmentKicker">
+          EQUIPMENT RECORD / 001
+        </p>
+
         <h1 id="equipmentName">EQUIPMENT NAME</h1>
+
         <p id="equipmentType">MISSION HARDWARE</p>
+
       </div>
 
       <div class="equipment-record-layout">
+
+        <!-- IMAGE COLUMN -->
+
         <section class="equipment-image-column">
-          <div class="pixel-panel-label">FIELD IMAGE</div>
+
+          <div class="pixel-panel-label">
+            FIELD IMAGE
+          </div>
+
           <div class="equipment-image-frame">
-            <img id="equipmentImage" src="MarsBG.jpeg" alt="Space equipment">
+
+            <img
+              id="equipmentImage"
+              src="MarsBG.jpeg"
+              alt="Space equipment">
+
           </div>
-          <div class="equipment-image-caption" id="equipmentImageCaption">ARCHIVE IMAGE</div>
+
+          <div
+            class="equipment-image-caption"
+            id="equipmentImageCaption">
+            ARCHIVE IMAGE
+          </div>
+
           <div class="equipment-location-panel">
+
             <span>LOCATION / DESTINATION</span>
+
             <strong id="equipmentLocation">MARS</strong>
+
           </div>
+
         </section>
+
+        <!-- INFORMATION COLUMN -->
 
         <section class="equipment-info-column">
+
           <article class="game-info-box">
-            <div class="game-info-heading"><span>01</span><h2>MISSION OVERVIEW</h2></div>
+
+            <div class="game-info-heading">
+              <span>01</span>
+              <h2>MISSION OVERVIEW</h2>
+            </div>
+
             <p id="equipmentOverview"></p>
+
           </article>
+
           <article class="game-info-box">
-            <div class="game-info-heading"><span>02</span><h2>WHAT IT DID</h2></div>
+
+            <div class="game-info-heading">
+              <span>02</span>
+              <h2>WHAT IT DID</h2>
+            </div>
+
             <p id="equipmentRole"></p>
+
           </article>
+
           <article class="game-info-box">
-            <div class="game-info-heading"><span>03</span><h2>THE FINAL CHAPTER</h2></div>
+
+            <div class="game-info-heading">
+              <span>03</span>
+              <h2>THE FINAL CHAPTER</h2>
+            </div>
+
             <p id="equipmentFinal"></p>
+
           </article>
+
           <article class="game-info-box status-info-box">
-            <div class="game-info-heading"><span>04</span><h2>WHERE IT IS NOW</h2></div>
+
+            <div class="game-info-heading">
+              <span>04</span>
+              <h2>WHERE IT IS NOW</h2>
+            </div>
+
             <p id="equipmentRemains"></p>
+
           </article>
+
         </section>
+
       </div>
+
+      <!-- MISSION DATA -->
 
       <section class="equipment-stats">
-        <div class="stats-title"><span>★</span> MISSION DATA <span>★</span></div>
-        <div class="equipment-stats-grid">
-          <div class="equipment-stat"><span>LAUNCH / DEPLOYMENT</span><strong id="equipmentLaunch"></strong></div>
-          <div class="equipment-stat"><span>ARRIVAL / LANDING</span><strong id="equipmentLanding"></strong></div>
-          <div class="equipment-stat"><span>LAST CONTACT</span><strong id="equipmentLastContact"></strong></div>
-          <div class="equipment-stat"><span>RECORD STATUS</span><strong id="equipmentStatus"></strong></div>
+
+        <div class="stats-title">
+          <span>★</span>
+          MISSION DATA
+          <span>★</span>
         </div>
+
+        <div class="equipment-stats-grid">
+
+          <div class="equipment-stat">
+            <span>LAUNCH / DEPLOYMENT</span>
+            <strong id="equipmentLaunch"></strong>
+          </div>
+
+          <div class="equipment-stat">
+            <span>ARRIVAL / LANDING</span>
+            <strong id="equipmentLanding"></strong>
+          </div>
+
+          <div class="equipment-stat">
+            <span>LAST CONTACT</span>
+            <strong id="equipmentLastContact"></strong>
+          </div>
+
+          <div class="equipment-stat">
+            <span>RECORD STATUS</span>
+            <strong id="equipmentStatus"></strong>
+          </div>
+
+        </div>
+
       </section>
 
+      <!-- FOOTER -->
+
       <div class="equipment-record-footer">
+
         <span>END OF EQUIPMENT FILE</span>
-        <a id="equipmentReturn" href="story.html?place=mars">BACK TO ARCHIVE ▶</a>
+
+        <a
+          id="equipmentReturn"
+          href="story.html?place=mars">
+          BACK TO ARCHIVE ▶
+        </a>
+
       </div>
+
     </section>
+
   </main>
 
-  <footer class="site-footer"><span>ESQUARE © 2026</span><span>MISSION AND EQUIPMENT RECORDS</span></footer>
+  <footer class="site-footer">
+
+    <span>ESQUARE © 2026</span>
+    <span>MISSION AND EQUIPMENT RECORDS</span>
+
+  </footer>
+
+<audio id="backgroundMusic" src="./bgmusic.mp3" loop></audio>
+
+<button id="musicToggle" type="button"
+    style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99999;
+        display: block;
+        background:#8BFF65;
+        color: rgb(0, 0, 0);
+       
+        padding: 10px 17px;
+        font-size: 14px;
+        cursor: pointer;
+    ">
+    ♫ PLAY MUSIC
+</button>
+
+<script>
+    const music = document.getElementById("backgroundMusic");
+    const musicButton = document.getElementById("musicToggle");
+
+    music.volume = 0.4;
+
+    musicButton.addEventListener("click", async function () {
+        if (music.paused) {
+            try {
+                await music.play();
+                musicButton.textContent = "♫ MUSIC ON";
+            } catch (error) {
+                console.error(error);
+                musicButton.textContent = "PLAY FAILED";
+            }
+        } else {
+            music.pause();
+            musicButton.textContent = "♫ PLAY MUSIC";
+        }
+    });
+</script>
 </body>
 </html>

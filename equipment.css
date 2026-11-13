@@ -1,7 +1,7 @@
 
 /* =====================================
    ESQUARE EQUIPMENT RECORD
-   Original ESquare colour palette
+   Original black and green colour palette
 ===================================== */
 
 .equipment-record-page {
@@ -18,6 +18,8 @@
     margin: 34px auto 55px;
 }
 
+/* Back button */
+
 .equipment-back {
     display: inline-block;
     margin-bottom: 18px;
@@ -32,16 +34,20 @@
     color: var(--mint, #C5FFA8);
 }
 
-/* Main game window */
+/* =====================================
+   MAIN EQUIPMENT WINDOW
+===================================== */
 
 .game-record-window {
+    position: relative;
+    z-index: 2;
+
     padding: clamp(14px, 2.5vw, 30px);
 
     color: #F2F2F2;
     background: rgba(0, 0, 0, 0.96);
 
     border: 3px solid #8BFF65;
-
     outline: 4px solid #18351e;
 
     box-shadow:
@@ -49,9 +55,22 @@
         0 0 0 8px rgba(0, 0, 0, 0.7);
 
     font-family: var(--mono, 'Space Mono', monospace);
+
+    transform:
+        perspective(1200px)
+        rotateX(0deg)
+        rotateY(0deg);
+
+    transform-style: preserve-3d;
+
+    transition: transform 0.18s ease-out;
+
+    will-change: transform;
 }
 
-/* Window header */
+/* =====================================
+   WINDOW HEADER
+===================================== */
 
 .game-window-top {
     display: flex;
@@ -78,7 +97,9 @@
 .window-dots i {
     width: 9px;
     height: 9px;
+
     display: block;
+
     background: #8BFF65;
     border: 1px solid #C5FFA8;
 }
@@ -95,10 +116,13 @@
     color: #8BFF65;
 }
 
-/* Equipment title */
+/* =====================================
+   EQUIPMENT TITLE
+===================================== */
 
 .equipment-record-heading {
     padding: 23px 0 20px;
+
     text-align: center;
 
     border-bottom: 2px dashed rgba(139, 255, 101, 0.4);
@@ -106,6 +130,7 @@
 
 .equipment-record-kicker {
     color: #C5FFA8;
+
     font-size: 10px;
     letter-spacing: 2px;
 }
@@ -114,6 +139,7 @@
     margin: 10px 0;
 
     color: #8BFF65;
+
     font-family: var(--pixel, monospace);
     font-size: clamp(20px, 4vw, 34px);
     line-height: 1.7;
@@ -121,27 +147,38 @@
 
 .equipment-record-heading > p:last-child {
     color: #888;
+
     font-size: 10px;
     letter-spacing: 2px;
 }
 
-/* Image and information layout */
+/* =====================================
+   IMAGE AND INFORMATION LAYOUT
+===================================== */
 
 .equipment-record-layout {
     display: grid;
-    grid-template-columns: minmax(250px, 0.88fr) minmax(0, 1.35fr);
+
+    grid-template-columns:
+        minmax(250px, 0.88fr)
+        minmax(0, 1.35fr);
+
     gap: 23px;
 
     padding-top: 24px;
+
     align-items: start;
 }
 
-/* Equipment image */
+/* =====================================
+   EQUIPMENT IMAGE
+===================================== */
 
 .equipment-image-column {
     padding: 12px;
 
     background: #050505;
+
     border: 2px solid #8BFF65;
 
     box-shadow: 5px 5px 0 #18351e;
@@ -151,6 +188,7 @@
     padding: 4px 4px 11px;
 
     color: #8BFF65;
+
     font-size: 10px;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -165,11 +203,13 @@
     padding: 8px;
 
     background: #000;
+
     border: 1px solid rgba(139, 255, 101, 0.5);
 }
 
 .equipment-image-frame img {
     display: block;
+
     width: 100%;
     max-height: 370px;
     min-height: 220px;
@@ -181,6 +221,7 @@
     padding: 9px 3px;
 
     color: #888;
+
     font-size: 9px;
     line-height: 1.6;
 }
@@ -194,22 +235,27 @@
     padding: 12px;
 
     background: #050505;
+
     border: 1px dashed #8BFF65;
 }
 
 .equipment-location-panel span,
 .equipment-stat span {
     color: #8BFF65;
+
     font-size: 9px;
     letter-spacing: 1.3px;
 }
 
 .equipment-location-panel strong {
     color: #C5FFA8;
+
     font-size: 12px;
 }
 
-/* Information boxes */
+/* =====================================
+   INFORMATION BOXES
+===================================== */
 
 .equipment-info-column {
     display: flex;
@@ -221,6 +267,7 @@
     padding: 15px 16px;
 
     background: #050505;
+
     border: 2px solid rgba(139, 255, 101, 0.65);
 
     box-shadow: 4px 4px 0 #18351e;
@@ -239,10 +286,12 @@
 .game-info-heading span {
     display: grid;
     place-items: center;
+
     flex: 0 0 27px;
     height: 27px;
 
     color: #000;
+
     background: #8BFF65;
 
     font-size: 11px;
@@ -253,6 +302,7 @@
     margin: 0;
 
     color: #8BFF65;
+
     font-family: var(--pixel, monospace);
     font-size: 10px;
     line-height: 1.8;
@@ -262,22 +312,27 @@
     margin: 11px 0 0;
 
     color: #F2F2F2;
+
     font-size: 12px;
     line-height: 1.85;
 }
 
 .status-info-box {
     background: #071007;
+
     border-color: #C5FFA8;
 }
 
-/* Mission statistics */
+/* =====================================
+   MISSION STATISTICS
+===================================== */
 
 .equipment-stats {
     margin-top: 27px;
     padding: 17px;
 
     background: #050505;
+
     border: 2px solid #8BFF65;
 }
 
@@ -285,7 +340,9 @@
     margin-bottom: 15px;
 
     color: #8BFF65;
+
     text-align: center;
+
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -297,7 +354,9 @@
 
 .equipment-stats-grid {
     display: grid;
+
     grid-template-columns: repeat(2, minmax(0, 1fr));
+
     gap: 11px;
 }
 
@@ -310,21 +369,27 @@
     padding: 13px;
 
     background: #000;
+
     border: 1px solid rgba(139, 255, 101, 0.4);
 }
 
 .equipment-stat strong {
     color: #F2F2F2;
+
     font-size: 12px;
     line-height: 1.6;
+
     overflow-wrap: anywhere;
 }
 
-/* Footer */
+/* =====================================
+   FOOTER
+===================================== */
 
 .equipment-record-footer {
     display: flex;
     justify-content: space-between;
+
     gap: 15px;
     flex-wrap: wrap;
 
@@ -334,6 +399,7 @@
     border-top: 2px dashed rgba(139, 255, 101, 0.4);
 
     color: #888;
+
     font-size: 10px;
     letter-spacing: 1px;
 }
@@ -341,6 +407,7 @@
 .equipment-record-footer a,
 .record-not-found a {
     color: #8BFF65;
+
     text-decoration: none;
     font-weight: bold;
 }
@@ -350,10 +417,13 @@
     color: #C5FFA8;
 }
 
-/* Missing record */
+/* =====================================
+   MISSING RECORD
+===================================== */
 
 .record-not-found {
     padding: 60px 20px;
+
     text-align: center;
 }
 
@@ -363,12 +433,16 @@
 
 .record-not-found p {
     color: #F2F2F2;
+
     line-height: 1.8;
 }
 
-/* Responsive */
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
 
 @media (max-width: 800px) {
+
     .equipment-record-layout {
         grid-template-columns: 1fr;
     }
@@ -376,17 +450,29 @@
     .equipment-image-column {
         width: 100%;
         max-width: 600px;
+
         margin: auto;
     }
 
     .equipment-image-frame img {
         max-height: 330px;
     }
+
+    .game-record-window {
+        transform: none !important;
+        transition: none;
+    }
+
+    .game-record-window::after {
+        opacity: 0.45;
+    }
 }
 
 @media (max-width: 520px) {
+
     .equipment-record-shell {
         width: 91%;
+
         margin-top: 22px;
     }
 
@@ -400,6 +486,7 @@
 
     .equipment-record-footer {
         flex-direction: column;
+
         text-align: center;
     }
 
@@ -409,5 +496,17 @@
 
     .equipment-image-frame img {
         min-height: 180px;
+    }
+}
+
+/* =====================================
+   ACCESSIBILITY
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .game-record-window {
+        transform: none !important;
+        transition: none;
     }
 }
