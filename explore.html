@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Explore | Esquare</title>
-
+    <link rel="stylesheet" href="audio.css">
+    <script defer src="audio.js"></script>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
@@ -27,11 +27,7 @@
             </span>
         </a>
 
-        <button
-            class="menu-toggle"
-            aria-label="Toggle navigation"
-            aria-expanded="false"
-            type="button">
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" type="button">
             ☰
         </button>
 
@@ -75,16 +71,11 @@
 
 
         <!-- DESTINATION CARDS -->
-        <section
-            class="destination-grid"
-            id="destinationGrid"
-            aria-label="Space destinations">
+        <section class="destination-grid" id="destinationGrid" aria-label="Space destinations">
 
 
             <!-- MARS -->
-            <a
-                class="destination-card mars-card"
-                href="story.html?place=mars">
+            <a class="destination-card mars-card" href="story.html?place=mars">
 
                 <span class="card-number">
                     01 / TERRESTRIAL PLANET
@@ -102,9 +93,7 @@
 
 
             <!-- MOON -->
-            <a
-                class="destination-card moon-card"
-                href="story.html?place=moon">
+            <a class="destination-card moon-card" href="story.html?place=moon">
 
                 <span class="card-number">
                     02 / EARTH'S SATELLITE
@@ -122,9 +111,7 @@
 
 
             <!-- SATURN -->
-            <a
-                class="destination-card saturn-card"
-                href="story.html?place=saturn">
+            <a class="destination-card saturn-card" href="story.html?place=saturn">
 
                 <span class="card-number">
                     03 / GAS GIANT
@@ -141,12 +128,10 @@
             </a>
 
 
-           
+
 
             <!-- ASTEROIDS -->
-            <a
-                class="destination-card asteroid-card"
-                href="story.html?place=asteroid">
+            <a class="destination-card asteroid-card" href="story.html?place=asteroid">
 
                 <span class="card-number">
                     05 / SMALL WORLD
@@ -164,9 +149,7 @@
 
 
             <!-- DEEP SPACE -->
-            <a
-                class="destination-card deep-card"
-                href="story.html?place=deep-space">
+            <a class="destination-card deep-card" href="story.html?place=deep-space">
 
                 <span class="card-number">
                     06 / BEYOND THE PLANETS
@@ -203,61 +186,8 @@
     </footer>
 
 
-<audio id="backgroundMusic" loop preload="auto">
-    <source src="./bgmusic .mp3" type="audio/mpeg">
-</audio>
 
-<button id="musicToggle" type="button">
-    ♫ PLAY MUSIC
-</button>
 
-<style>
-#musicToggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99999;
-    display: block;
-    background: #8BFF65;
-    color: black;
-    padding: 10px 17px;
-    font-size: 14px;
-    cursor: pointer;
-    border: none;
-}
-</style>
-
-<script>
-const music = document.getElementById("backgroundMusic");
-const musicButton = document.getElementById("musicToggle");
-
-music.volume = 0.4;
-
-musicButton.addEventListener("click", async () => {
-    if (music.paused) {
-        try {
-            await music.play();
-            musicButton.textContent = "♫ MUSIC ON";
-        } catch (error) {
-            console.error("Audio error:", error);
-            musicButton.textContent = "PLAY FAILED";
-        }
-    } else {
-        music.pause();
-        musicButton.textContent = "♫ PLAY MUSIC";
-    }
-});
-
-// Detect playback errors
-music.addEventListener("error", () => {
-    console.error("Audio loading error:", music.error);
-});
-
-// Detect when audio ends
-music.addEventListener("ended", () => {
-    console.log("Audio ended. Loop:", music.loop);
-});
-</script>
 
 
 </body>

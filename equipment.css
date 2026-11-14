@@ -510,3 +510,21 @@
         transition: none;
     }
 }
+
+.equipment-choice-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 9px 14px;
+    color: #8BFF65;
+    border: 1px solid #8BFF65;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+}
+
+.equipment-choice-link:hover {
+    background: #8BFF65;
+    color: #000;
+}

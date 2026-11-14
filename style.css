@@ -1379,3 +1379,54 @@ textarea {
         gap: 16px;
     }
 }
+
+
+
+
+/* HAMBURGER BUTTON */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* MOBILE NAVIGATION */
+@media (max-width: 768px) {
+
+    .site-header {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px;
+        background: #080808;
+        border: 1px solid rgba(255,255,255,0.2);
+        z-index: 1000;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 14px;
+        text-align: center;
+    }
+}
