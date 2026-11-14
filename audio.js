@@ -1,9 +1,9 @@
 
-/* ESQUARE GLOBAL BACKGROUND MUSIC */
+/* BACKGROUND MUSIC */
 
 (() => {
     const AUDIO_FILE = "bgesquare.mp3";
-    const DEFAULT_VOLUME = 0.25;
+    const DEFAULT_VOLUME = 0.45;
     const STORAGE_KEY = "esquareMusicEnabled";
 
     let musicEnabled = localStorage.getItem(STORAGE_KEY) !== "false";
@@ -30,7 +30,7 @@
         </button>
     `;
 
-    // Place music control inside mobile navigation
+    // Place music control inside  nav bar
     const nav = document.querySelector(".nav-links");
 
     if (nav) {
@@ -70,7 +70,7 @@
         }
     });
 
-    // Try playback after the first user interaction
+    // Try playback after 1st user interaction
     document.addEventListener("pointerdown", playMusic, { once: true });
 
     updateSwitch();

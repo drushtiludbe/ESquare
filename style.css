@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap');
+
 
 /* =====================================
    1. GLOBAL SETTINGS
@@ -72,12 +74,14 @@ textarea {
 
 .stars {
     z-index: -1;
+
     background-image:
         radial-gradient(1px 1px at 10% 20%, #fff 98%, transparent),
         radial-gradient(1px 1px at 30% 70%, #fff 98%, transparent),
         radial-gradient(2px 2px at 60% 40%, var(--green) 98%, transparent),
         radial-gradient(1px 1px at 80% 15%, #fff 98%, transparent),
         radial-gradient(1px 1px at 90% 85%, #fff 98%, transparent);
+
     background-size: 250px 250px;
     opacity: 0.65;
 }
@@ -142,16 +146,16 @@ textarea {
     display: block;
     height: 2px;
     margin-top: 6px;
-
     background: var(--green);
     content: "";
 }
 
 .menu-toggle {
     display: none;
+
     padding: 4px 10px;
 
-    background: none;
+    background: transparent;
     border: 1px solid var(--line);
     color: var(--green);
 
@@ -203,7 +207,6 @@ textarea {
 .lead {
     max-width: 580px;
     margin: 15px auto;
-
     color: #aeb9ca;
     font-size: 13px;
 }
@@ -253,7 +256,6 @@ textarea {
 
 .button-outline {
     padding: 12px;
-
     background: transparent;
     color: var(--green);
     font-size: 9px;
@@ -266,7 +268,7 @@ textarea {
 
 
 /* =====================================
-   6. HOME PAGE / HERO
+   6. HOME PAGE
 ===================================== */
 
 .hero {
@@ -355,10 +357,6 @@ textarea {
     transform: rotate(24deg);
 }
 
-
-
-
-
 .hero-coordinates {
     position: absolute;
     right: 6%;
@@ -368,8 +366,6 @@ textarea {
     font-size: 9px;
     letter-spacing: 1px;
 }
-
-
 
 
 /* =====================================
@@ -403,9 +399,11 @@ textarea {
     letter-spacing: 4px;
 }
 
+/* Two-column destination arrangement */
+
 .destination-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
 }
 
@@ -437,9 +435,9 @@ textarea {
 
     border-radius: 50%;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
 
     content: "";
 }
@@ -491,7 +489,7 @@ textarea {
     color: var(--green);
 }
 
-/* Destination photographs */
+/* Destination images */
 
 .mars-card::before {
     background-image: url("MarsBG.jpeg");
@@ -505,14 +503,8 @@ textarea {
     background-image: url("SaturnBg.jpg");
 }
 
-
-
 .asteroid-card::before {
     background-image: url("astBg.jpg");
-}
-
-.deep-card::before {
-    background-image: url("spacebg.jpg");
 }
 
 .archive-note {
@@ -780,12 +772,13 @@ textarea {
 /* =====================================
    10. ABOUT PAGE
 ===================================== */
+
 .about-shell {
     width: 100%;
     max-width: 1200px;
+
     margin: 0 auto;
     padding: 30px 20px;
-    box-sizing: border-box;
 }
 
 .about-shell > .small-title {
@@ -797,14 +790,12 @@ textarea {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
     align-items: center;
     gap: 50px;
+
     width: 100%;
-    box-sizing: border-box;
 }
 
 .about-art {
     width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
     border: 1px solid #39ff14;
     line-height: 0;
 }
@@ -818,11 +809,11 @@ textarea {
 .about-copy {
     min-width: 0;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .about-copy h2 {
     margin-top: 0;
+
     color: #e2f8d5;
     font-family: var(--pixel);
     font-size: 18px;
@@ -838,41 +829,13 @@ textarea {
 
 .about-note {
     padding-top: 14px;
+
     border-top: 1px solid var(--line);
+
     color: #8290a7 !important;
     font-size: 10px !important;
 }
 
-@media (max-width: 700px) {
-    .about-shell {
-        padding: 20px 14px;
-    }
-
-    .about-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 25px;
-    }
-
-    .about-art {
-        width: 100%;
-    }
-
-    .about-copy {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .about-copy h2 {
-        font-size: 15px;
-    }
-
-    .about-copy p {
-        font-size: 13px;
-        line-height: 1.8;
-    }
-}
 
 /* =====================================
    11. CONTACT PAGE
@@ -908,12 +871,6 @@ textarea {
     letter-spacing: 10px;
     vertical-align: middle;
 }
-
-
-
-
-
-
 
 .form-feedback {
     margin-bottom: 0;
@@ -957,10 +914,95 @@ textarea {
 
 
 /* =====================================
-   13. TABLET RESPONSIVENESS
+   13. MISSION AND EQUIPMENT RECORDS
+===================================== */
+
+.record-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    margin-top: 20px;
+}
+
+.record-item {
+    padding: 12px 14px;
+
+    border: 1px solid currentColor;
+    border-radius: 4px;
+}
+
+.record-item h3 {
+    margin: 0 0 7px;
+    font-size: 15px;
+}
+
+.record-item p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+#equipmentEmpty {
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+
+/* =====================================
+   14. BOTTOM LINKS
+===================================== */
+
+.bottom-links {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 60px auto 35px;
+    padding: 25px;
+
+    border: 1px solid #39ff14;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.bottom-links h2 {
+    margin: 0 0 20px;
+
+    color: #39ff14;
+    font-family: var(--pixel);
+    font-size: 15px;
+    text-align: center;
+}
+
+.bottom-links-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.bottom-links-content a {
+    color: #e2f8d5;
+    font-size: 12px;
+    transition: color 0.2s ease;
+}
+
+.bottom-links-content a:hover {
+    color: #39ff14;
+}
+
+
+/* =====================================
+   15. TABLET RESPONSIVENESS
 ===================================== */
 
 @media (max-width: 900px) {
+
     .site-header {
         padding: 0 4%;
     }
@@ -971,10 +1013,6 @@ textarea {
 
     .page-shell {
         width: 90%;
-    }
-
-    .destination-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .about-grid,
@@ -993,7 +1031,56 @@ textarea {
 
 
 /* =====================================
-   14. MOBILE RESPONSIVENESS
+   16. MOBILE NAVIGATION
+===================================== */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+
+        display: none;
+        flex-direction: column;
+        gap: 0;
+
+        width: 200px;
+        padding: 10px;
+
+        background: #080808;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 14px;
+        text-align: center;
+    }
+
+    .nav-links a.active::after {
+        display: none;
+    }
+}
+
+
+/* =====================================
+   17. MOBILE RESPONSIVENESS
 ===================================== */
 
 @media (max-width: 600px) {
@@ -1012,40 +1099,6 @@ textarea {
 
     .brand-mark {
         font-size: 18px;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        position: absolute;
-        top: 67px;
-        right: 0;
-        left: 0;
-        z-index: 20;
-
-        display: none;
-        flex-direction: column;
-        gap: 16px;
-
-        padding: 20px;
-
-        background: #000;
-        border-bottom: 1px solid var(--line);
-    }
-
-    .nav-links.open {
-        display: flex;
-    }
-
-    .nav-links a {
-        padding: 8px;
-        font-size: 10px;
-    }
-
-    .nav-links a.active::after {
-        display: none;
     }
 
 
@@ -1094,16 +1147,6 @@ textarea {
 
     .hero-coordinates {
         display: none;
-    }
-
-
-    .intro-strip {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 7px;
-
-        padding: 22px 7%;
-        font-size: 9px;
     }
 
 
@@ -1226,20 +1269,58 @@ textarea {
     }
 
 
-   
-}
+    /* About */
+
+    .about-shell {
+        padding: 20px 14px;
+    }
+
+    .about-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+    }
+
+    .about-art,
+    .about-copy {
+        width: 100%;
+    }
+
+    .about-copy h2 {
+        font-size: 15px;
+    }
+
+    .about-copy p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+
     /* Contact */
 
     .contact-shell {
         grid-template-columns: 1fr;
         gap: 28px;
-
         padding-top: 48px;
     }
 
-    
     .signal-decoration {
         margin-top: 20px;
+    }
+
+
+    /* Bottom links */
+
+    .bottom-links {
+        width: calc(100% - 28px);
+        margin: 40px auto 25px;
+        padding: 20px 12px;
+    }
+
+    .bottom-links-content {
+        flex-direction: column;
+        gap: 16px;
     }
 
 
@@ -1259,12 +1340,15 @@ textarea {
 
         font-size: 8px;
     }
+}
+
 
 /* =====================================
-   15. VERY SMALL PHONES
+   18. VERY SMALL PHONES
 ===================================== */
 
 @media (max-width: 380px) {
+
     .brand {
         font-size: 10px;
     }
@@ -1280,153 +1364,5 @@ textarea {
 
     .story-box {
         padding: 18px;
-    }
-}
-
-
-/* =====================================
-   16. MISSION AND EQUIPMENT RECORDS
-===================================== */
-
-.record-list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-
-    margin-top: 20px;
-}
-
-.record-item {
-    padding: 12px 14px;
-
-    border: 1px solid currentColor;
-    border-radius: 4px;
-}
-
-.record-item h3 {
-    margin: 0 0 7px;
-    font-size: 15px;
-}
-
-.record-item p {
-    margin: 0;
-    font-size: 13px;
-    line-height: 1.7;
-}
-
-#equipmentEmpty {
-    margin-top: 18px;
-    font-size: 13px;
-    line-height: 1.7;
-}
-
-[hidden] {
-    display: none !important;
-}
-
-
-
-/* BOTTOM LINKS BOX */
-
-.bottom-links {
-    width: 100%;
-    max-width: 1100px;
-    margin: 60px auto 35px;
-    padding: 25px;
-    box-sizing: border-box;
-
-    border: 1px solid #39ff14;
-    background: rgba(0, 0, 0, 0.75);
-}
-
-.bottom-links h2 {
-    margin: 0 0 20px;
-    color: #39ff14;
-    font-family: var(--pixel);
-    font-size: 15px;
-    text-align: center;
-}
-
-.bottom-links-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 25px;
-}
-
-.bottom-links-content a {
-    color: #e2f8d5;
-    text-decoration: none;
-    font-size: 12px;
-    transition: color 0.2s ease;
-}
-
-.bottom-links-content a:hover {
-    color: #39ff14;
-    
-}
-
-@media (max-width: 600px) {
-    .bottom-links {
-        width: calc(100% - 28px);
-        margin: 40px auto 25px;
-        padding: 20px 12px;
-    }
-
-    .bottom-links-content {
-        flex-direction: column;
-        gap: 16px;
-    }
-}
-
-
-
-
-/* HAMBURGER BUTTON */
-.menu-toggle {
-    display: none;
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-/* MOBILE NAVIGATION */
-@media (max-width: 768px) {
-
-    .site-header {
-        position: relative;
-    }
-
-    .menu-toggle {
-        display: block;
-        margin-left: auto;
-        z-index: 1001;
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 200px;
-        flex-direction: column;
-        gap: 0;
-        padding: 10px;
-        background: #080808;
-        border: 1px solid rgba(255,255,255,0.2);
-        z-index: 1000;
-    }
-
-    .nav-links.open {
-        display: flex;
-    }
-
-    .nav-links a {
-        display: block;
-        padding: 14px;
-        text-align: center;
     }
 }

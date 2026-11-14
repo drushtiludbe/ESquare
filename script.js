@@ -53,7 +53,7 @@ const destinations = {
             { name: "Perseverance landing hardware", description: "The NASA mission's heat shield, backshell and descent-stage hardware were separated during landing and left on Mars." }
         ],
 
-        prev: "deep-space",
+        prev: "asteroid",
         next: "moon"
     },
 
@@ -136,28 +136,6 @@ const destinations = {
         ],
 
         prev: "saturn",
-        next: "deep-space"
-    },
-
-
-    "deep-space": {
-        number: "005",
-        name: "DEEP SPACE",
-        image: "spacebg.jpg",
-
-        overview: "Deep-space missions travel beyond the inner planets to study distant planets, the outer Solar System and interstellar space. Some spacecraft continue operating far from Earth; inactive spacecraft are not automatically classified as deliberately discarded equipment.",
-
-        missions: [
-            { name: "Pioneer 10", description: "Performed the first successful flyby of Jupiter in 1973 and continued outward from the Solar System." },
-            { name: "Pioneer 11", description: "Visited Jupiter and Saturn before continuing on an outward trajectory." },
-            { name: "Voyager 1", description: "Explored the outer planets and later entered interstellar space." },
-            { name: "Voyager 2", description: "Visited Jupiter, Saturn, Uranus and Neptune before travelling into interstellar space." },
-            { name: "New Horizons", description: "Conducted the first close flyby of Pluto in 2015 and later explored a Kuiper Belt object." }
-        ],
-
-        equipment: [],
-
-        prev: "asteroid",
         next: "mars"
     }
 
@@ -182,7 +160,6 @@ function displayRecords(containerId, records) {
 
     container.replaceChildren();
 
-    // Get the currently selected destination
     const params = new URLSearchParams(window.location.search);
     const place = params.get("place") || "mars";
 
@@ -199,9 +176,6 @@ function displayRecords(containerId, records) {
         paragraph.textContent = record.description;
 
         article.append(heading, paragraph);
-
-        // EQUIPMENT LINKS
-        // Only equipment records receive a link.
 
         if (containerId === "equipmentList") {
 
@@ -299,7 +273,6 @@ if (storyTitle) {
         ["EQUIPMENT RECORDS", destination.equipment.length]
     ]);
 
-    // This creates clickable links for the equipment choices.
     displayRecords("equipmentList", destination.equipment);
 
     const equipmentEmpty = document.getElementById("equipmentEmpty");
