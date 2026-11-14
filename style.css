@@ -505,9 +505,7 @@ textarea {
     background-image: url("SaturnBg.jpg");
 }
 
-.sun-card::before {
-    background-image: url("SunBg.jpg");
-}
+
 
 .asteroid-card::before {
     background-image: url("astBg.jpg");

@@ -1,5 +1,6 @@
 
-// ==========================================
+/
+/ ==========================================
 // ESQUARE
 // Navigation, mission records and equipment
 // ==========================================
@@ -22,9 +23,6 @@ if (menuButton && nav) {
 
 // ==========================================
 // DESTINATION DATA
-// Counts below refer to the mission records
-// included in this website, not every mission
-// ever sent to that destination.
 // ==========================================
 
 const destinations = {
@@ -277,60 +275,12 @@ const destinations = {
         ],
 
         prev: "moon",
-        next: "sun"
-    },
-
-
-    sun: {
-        number: "004",
-        name: "THE SUN",
-        image: "SunBg.jpg",
-
-        overview:
-            "Solar missions use spacecraft and instruments to study the Sun's atmosphere, magnetic field and solar wind. The Sun is not a solid landing destination. No equipment is currently listed here under the archive's destination-based criteria.",
-
-        missions: [
-            {
-                name: "Helios 1",
-                description:
-                    "A solar probe launched in 1974 to study the solar wind and the environment close to the Sun."
-            },
-            {
-                name: "Helios 2",
-                description:
-                    "Followed Helios 1 and studied the Sun from a close solar orbit."
-            },
-            {
-                name: "Ulysses",
-                description:
-                    "Studied the Sun's polar regions and solar wind from a high-inclination orbit."
-            },
-            {
-                name: "SOHO",
-                description:
-                    "Observes the Sun and its atmosphere from the Sun-Earth L1 region."
-            },
-            {
-                name: "Parker Solar Probe",
-                description:
-                    "Studies the solar corona and solar wind through repeated close approaches to the Sun."
-            },
-            {
-                name: "Solar Orbiter",
-                description:
-                    "Studies the Sun, its magnetic activity and solar wind using remote sensing and in-situ instruments."
-            }
-        ],
-
-        equipment: [],
-
-        prev: "saturn",
         next: "asteroid"
     },
 
 
     asteroid: {
-        number: "005",
+        number: "004",
         name: "ASTEROIDS",
         image: "astBg.jpg",
 
@@ -383,13 +333,13 @@ const destinations = {
             }
         ],
 
-        prev: "sun",
+        prev: "saturn",
         next: "deep-space"
     },
 
 
     "deep-space": {
-        number: "006",
+        number: "005",
         name: "DEEP SPACE",
         image: "spacebg.jpg",
 
@@ -623,11 +573,8 @@ if (storyTitle) {
 }
 
 
-
-
 // ==========================================
 // HORIZONTAL SLIDE NAVIGATION
-// Preserved from your original script
 // ==========================================
 
 const storyTrack = document.getElementById("storyTrack");

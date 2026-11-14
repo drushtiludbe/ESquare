@@ -230,45 +230,62 @@
 
   </footer>
 
-<audio id="backgroundMusic" src="./bgmusic.mp3" loop></audio>
 
-<button id="musicToggle" type="button"
-    style="
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 99999;
-        display: block;
-        background:#8BFF65;
-        color: rgb(0, 0, 0);
-       
-        padding: 10px 17px;
-        font-size: 14px;
-        cursor: pointer;
-    ">
+<audio id="backgroundMusic" loop preload="auto">
+    <source src="./bgmusic .mp3mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicToggle" type="button">
     ♫ PLAY MUSIC
 </button>
 
+<style>
+#musicToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999;
+    display: block;
+    background: #8BFF65;
+    color: black;
+    padding: 10px 17px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+</style>
+
 <script>
-    const music = document.getElementById("backgroundMusic");
-    const musicButton = document.getElementById("musicToggle");
+const music = document.getElementById("backgroundMusic");
+const musicButton = document.getElementById("musicToggle");
 
-    music.volume = 0.4;
+music.volume = 0.4;
 
-    musicButton.addEventListener("click", async function () {
-        if (music.paused) {
-            try {
-                await music.play();
-                musicButton.textContent = "♫ MUSIC ON";
-            } catch (error) {
-                console.error(error);
-                musicButton.textContent = "PLAY FAILED";
-            }
-        } else {
-            music.pause();
-            musicButton.textContent = "♫ PLAY MUSIC";
+musicButton.addEventListener("click", async () => {
+    if (music.paused) {
+        try {
+            await music.play();
+            musicButton.textContent = "♫ MUSIC ON";
+        } catch (error) {
+            console.error("Audio error:", error);
+            musicButton.textContent = "PLAY FAILED";
         }
-    });
+    } else {
+        music.pause();
+        musicButton.textContent = "♫ PLAY MUSIC";
+    }
+});
+
+// Detect playback errors
+music.addEventListener("error", () => {
+    console.error("Audio loading error:", music.error);
+});
+
+// Detect when audio ends
+music.addEventListener("ended", () => {
+    console.log("Audio ended. Loop:", music.loop);
+});
 </script>
+
 </body>
 </html>
