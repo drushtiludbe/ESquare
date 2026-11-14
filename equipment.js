@@ -96,7 +96,7 @@
         // MARS — 9 RECORDS
         // ======================================
 
-        "Mars Pathfinder Lander": {
+        "mars pathfinder lander": {
 
             type: "MARS LANDER",
             image: "pfl.png",
@@ -122,7 +122,7 @@
         },
 
 
-        "Sojourner Rover": {
+        "sojourner rover": {
 
             type: "MARS MICRO ROVER",
             image: "sojourner.jpg",
@@ -149,7 +149,7 @@
         },
 
 
-        "Viking 1 Lander": {
+        "viking 1 lander": {
 
             type: "MARS LANDER",
             image: "viking1.jpg",
@@ -160,9 +160,9 @@
 
             status: "MISSION COMPLETE — LEFT ON MARS",
 
-           
 
-            
+
+
 
             overview:
                 "Viking 1 was part of NASA's Viking programme. It became the first successful US spacecraft to land and operate on Mars.",
@@ -179,11 +179,11 @@
         },
 
 
-        "Viking 2 lander": {
+        "viking 2 lander": {
 
             type: "MARS LANDER",
-image: "viking1.jpg",
-caption: "Viking 2 Lander",
+            image: "viking1.jpg",
+            caption: "Viking 2 Lander",
             launch: "September 9, 1975",
             landing: "September 3, 1976",
             contact: "April 11, 1980",
@@ -205,19 +205,19 @@ caption: "Viking 2 Lander",
         },
 
 
-        "Spirit Rover": {
+        "spirit rover": {
 
             type: "MARS EXPLORATION ROVER",
-image: "spirit.jpg",
-caption: "Spirit Rover",
+            image: "spirit.jpg",
+            caption: "Spirit Rover",
             launch: "June 10, 2003",
             landing: "January 4, 2004",
             contact: "March 22, 2010",
 
             status: "MISSION COMPLETE — LEFT ON MARS",
 
-            
-           
+
+
 
             overview:
                 "Spirit was one of NASA's twin Mars Exploration Rovers. It was originally designed for a 90-Martian-day mission, but continued operating for more than six years.",
@@ -234,11 +234,11 @@ caption: "Spirit Rover",
         },
 
 
-        "Opportunity Rover": {
+        "opportunity rover": {
 
             type: "MARS EXPLORATION ROVER",
-image: "oppo.jpeg",
-caption: "Opportunity Rover",
+            image: "oppo.jpeg",
+            caption: "Opportunity Rover",
             launch: "July 7, 2003",
             landing: "January 25, 2004",
             contact: "June 10, 2018",
@@ -261,11 +261,11 @@ caption: "Opportunity Rover",
         },
 
 
-        "Phoenix Lander": {
+        "phoenix lander": {
 
             type: "MARS POLAR LANDER",
-image: "phono.jpg",
-caption: "Phoenix Lander",
+            image: "phono.jpg",
+            caption: "Phoenix Lander",
             launch: "August 4, 2007",
             landing: "May 25, 2008",
             contact: "November 2, 2008",
@@ -287,11 +287,11 @@ caption: "Phoenix Lander",
         },
 
 
-        "Insight Lander": {
+        "insight lander": {
 
             type: "MARS GEOPHYSICAL LANDER",
-image: "insi.png",
-caption: "Insight Lander",
+            image: "insi.png",
+            caption: "Insight Lander",
             launch: "May 5, 2018",
             landing: "November 26, 2018",
             contact: "December 15, 2022",
@@ -313,11 +313,11 @@ caption: "Insight Lander",
         },
 
 
-        "Perseverance Landing Hardware": {
+        "perseverance landing hardware": {
 
             type: "MARS LANDING SYSTEM HARDWARE",
-image: "persi.jpg",
-caption: "Perseverance Landing Hardware",
+            image: "persi.jpg",
+            caption: "Perseverance Landing Hardware",
             launch: "July 30, 2020",
             landing: "February 18, 2021",
             contact: "Not applicable — separated during landing",
@@ -346,7 +346,8 @@ caption: "Perseverance Landing Hardware",
         "apollo lunar module descent stages": {
 
             type: "LUNAR MODULE DESCENT STAGES",
-
+            image: "Apollods.jpg",
+            caption: "Apollo Lunar Module Descent Stage",
             launch: "Apollo missions, 1969–1972",
             landing: "First crewed landing: July 20, 1969",
             contact: "Not applicable — intentionally left",
@@ -371,7 +372,8 @@ caption: "Perseverance Landing Hardware",
         "apollo lunar roving vehicles": {
 
             type: "LUNAR ROVING VEHICLES",
-
+            image: "Apolloldrv.jpg",
+            caption: "Apollo Lunar Roving Vehicles",
             launch: "Apollo 15, 16 and 17 missions",
             landing: "First deployed: July 31, 1971",
             contact: "Last used: December 1972",
@@ -396,6 +398,8 @@ caption: "Perseverance Landing Hardware",
         "apollo alsep instruments": {
 
             type: "LUNAR SCIENTIFIC INSTRUMENTS",
+            image: "Alsep.jpg",
+            caption: "The ALSEP of the Apollo 16 mission",
 
             launch: "Apollo missions, 1969–1972",
             landing: "First deployment: July 21, 1969",
@@ -421,7 +425,8 @@ caption: "Perseverance Landing Hardware",
         "surveyor landers": {
 
             type: "ROBOTIC LUNAR LANDERS",
-
+            type: "Surveyor Lander",
+            image: "sl.jpg",
             launch: "Surveyor programme, 1966–1968",
             landing: "First successful landing: June 2, 1966",
             contact: "Varied by individual mission",
@@ -446,7 +451,8 @@ caption: "Perseverance Landing Hardware",
         "apollo ascent stages": {
 
             type: "LUNAR MODULE ASCENT STAGES",
-
+            image: "Apolloas.jpg",
+            caption: "LUNAR MODULE ASCENT STAGE",
             launch: "Apollo missions, 1969–1972",
             landing: "Varied by Apollo mission",
             contact: "Varied by mission",
@@ -475,7 +481,8 @@ caption: "Perseverance Landing Hardware",
         "cassini spacecraft": {
 
             type: "SATURN ORBITER",
-
+            image: "cassini.jpg",
+            caption: "Cassini spacecraft",
             launch: "October 15, 1997",
             landing: "Not applicable — entered Saturn's atmosphere",
             contact: "September 15, 2017",
@@ -504,7 +511,8 @@ caption: "Perseverance Landing Hardware",
         "near shoemaker": {
 
             type: "ASTEROID ORBITER AND LANDER",
-
+            image: "ns.png",
+            caption: "Near Shoemaker",
             launch: "February 17, 1996",
             landing: "February 12, 2001 — Eros",
             contact: "February 28, 2001",
@@ -529,7 +537,8 @@ caption: "Perseverance Landing Hardware",
         "dart impactor": {
 
             type: "ASTEROID DEFLECTION IMPACTOR",
-
+            image: "dart.jpg",
+            caption: "Dart ( NASA's Double Asteroid Redirection Test mission ) ",
             launch: "November 24, 2021",
             landing: "September 26, 2022 — Dimorphos impact",
             contact: "September 26, 2022",
@@ -654,3 +663,4 @@ caption: "Perseverance Landing Hardware",
 
 
 })();
+
