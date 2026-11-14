@@ -1366,3 +1366,17 @@ background-position: center;
         padding: 18px;
     }
 }
+
+/* Saturn image — larger and vertically centred */
+.saturn-card::before {
+    width: 220px;
+    height: 220px;
+    top: 50%;
+    left: 150px; 
+    transform: translateY(-50%) scale(1.2);
+
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    border-radius: 0%;
+}

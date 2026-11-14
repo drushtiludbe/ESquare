@@ -186,7 +186,7 @@ function displayRecords(containerId, records) {
             link.href =
                 `equipment.html?place=${encodeURIComponent(place)}&item=${index}`;
 
-            link.textContent = "VIEW EQUIPMENT RECORD →";
+            link.textContent = "VIEW EQUIPMENT RECORD →  " ;
 
             article.appendChild(link);
         }

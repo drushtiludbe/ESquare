@@ -28,9 +28,9 @@
 
     const item =
         destination &&
-        Array.isArray(destination.equipment) &&
-        Number.isInteger(itemIndex) &&
-        itemIndex >= 0
+            Array.isArray(destination.equipment) &&
+            Number.isInteger(itemIndex) &&
+            itemIndex >= 0
             ? destination.equipment[itemIndex]
             : null;
 
@@ -96,10 +96,11 @@
         // MARS — 9 RECORDS
         // ======================================
 
-        "mars pathfinder lander": {
+        "Mars Pathfinder Lander": {
 
             type: "MARS LANDER",
-
+            image: "pfl.png",
+            caption: "Mars Pathfinder Lander",
             launch: "December 4, 1996",
             landing: "July 4, 1997",
             contact: "September 27, 1997",
@@ -107,7 +108,7 @@
             status: "MISSION COMPLETE — LEFT ON MARS",
 
             overview:
-                "Mars Pathfinder was a NASA mission designed to demonstrate a cost-effective way to deliver scientific equipment to the Martian surface. It combined a stationary lander with a small robotic rover.",
+                "Mars Pathfinder was a NASA mission designed to demonstrate a cost-effective way to deliver scientific equipment to the Martian surface. It combined a stationary lander with a small robotic rover.Later , It was renamed as Carl Sagan Memorial Station.",
 
             role:
                 "The lander served as the communication centre for Sojourner. It carried cameras and scientific instruments that examined the surrounding terrain, atmosphere and Martian soil.",
@@ -121,20 +122,17 @@
         },
 
 
-        "sojourner rover": {
+        "Sojourner Rover": {
 
             type: "MARS MICRO ROVER",
-
+            image: "sojourner.jpg",
+            caption: "Sojourner Rover",
             launch: "December 4, 1996",
             landing: "July 4, 1997",
             contact: "September 27, 1997",
 
             status: "MISSION COMPLETE — LEFT ON MARS",
 
-            image:
-                "https://commons.wikimedia.org/wiki/Special:FilePath/Sojourner%20rover%20scheme.jpg",
-
-            caption: "NASA — Sojourner rover engineering illustration",
 
             overview:
                 "Sojourner was the small robotic rover carried to Mars by the Pathfinder lander. It became the first successful wheeled rover to operate on another planet.",
@@ -151,20 +149,20 @@
         },
 
 
-        "viking 1 lander": {
+        "Viking 1 Lander": {
 
             type: "MARS LANDER",
-
+            image: "viking1.jpg",
+            caption: "Viking 1 Lander",
             launch: "August 20, 1975",
             landing: "July 20, 1976",
             contact: "November 13, 1982",
 
             status: "MISSION COMPLETE — LEFT ON MARS",
 
-            image:
-                "https://commons.wikimedia.org/wiki/Special:FilePath/Viking%20spacecraft.jpg",
+           
 
-            caption: "NASA — Viking spacecraft",
+            
 
             overview:
                 "Viking 1 was part of NASA's Viking programme. It became the first successful US spacecraft to land and operate on Mars.",
@@ -181,10 +179,11 @@
         },
 
 
-        "viking 2 lander": {
+        "Viking 2 lander": {
 
             type: "MARS LANDER",
-
+image: "viking1.jpg",
+caption: "Viking 2 Lander",
             launch: "September 9, 1975",
             landing: "September 3, 1976",
             contact: "April 11, 1980",
@@ -206,20 +205,19 @@
         },
 
 
-        "spirit rover": {
+        "Spirit Rover": {
 
             type: "MARS EXPLORATION ROVER",
-
+image: "spirit.jpg",
+caption: "Spirit Rover",
             launch: "June 10, 2003",
             landing: "January 4, 2004",
             contact: "March 22, 2010",
 
             status: "MISSION COMPLETE — LEFT ON MARS",
 
-            image:
-                "https://commons.wikimedia.org/wiki/Special:FilePath/MER%20rovers%20and%20Sojourner%20(PIA04422).jpg",
-
-            caption: "NASA / JPL — Mars rover family",
+            
+           
 
             overview:
                 "Spirit was one of NASA's twin Mars Exploration Rovers. It was originally designed for a 90-Martian-day mission, but continued operating for more than six years.",
@@ -236,20 +234,17 @@
         },
 
 
-        "opportunity rover": {
+        "Opportunity Rover": {
 
             type: "MARS EXPLORATION ROVER",
-
+image: "oppo.jpeg",
+caption: "Opportunity Rover",
             launch: "July 7, 2003",
             landing: "January 25, 2004",
             contact: "June 10, 2018",
 
             status: "MISSION COMPLETE — LEFT ON MARS",
 
-            image:
-                "https://commons.wikimedia.org/wiki/Special:FilePath/MER%20rovers%20and%20Sojourner%20(PIA04422).jpg",
-
-            caption: "NASA / JPL — Mars Exploration Rover",
 
             overview:
                 "Opportunity was one of NASA's twin Mars Exploration Rovers. Designed for a 90-sol mission, it continued exploring Mars for almost 15 years.",
@@ -266,10 +261,11 @@
         },
 
 
-        "phoenix lander": {
+        "Phoenix Lander": {
 
             type: "MARS POLAR LANDER",
-
+image: "phono.jpg",
+caption: "Phoenix Lander",
             launch: "August 4, 2007",
             landing: "May 25, 2008",
             contact: "November 2, 2008",
@@ -291,10 +287,11 @@
         },
 
 
-        "insight lander": {
+        "Insight Lander": {
 
             type: "MARS GEOPHYSICAL LANDER",
-
+image: "insi.png",
+caption: "Insight Lander",
             launch: "May 5, 2018",
             landing: "November 26, 2018",
             contact: "December 15, 2022",
@@ -316,10 +313,11 @@
         },
 
 
-        "perseverance landing hardware": {
+        "Perseverance Landing Hardware": {
 
             type: "MARS LANDING SYSTEM HARDWARE",
-
+image: "persi.jpg",
+caption: "Perseverance Landing Hardware",
             launch: "July 30, 2020",
             landing: "February 18, 2021",
             contact: "Not applicable — separated during landing",
