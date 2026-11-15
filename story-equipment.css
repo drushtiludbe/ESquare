@@ -66,7 +66,9 @@
     background: #C5FFA8;
 }
 
-/* Equipment slide */
+/* =====================================
+   EQUIPMENT SLIDE
+===================================== */
 
 .story-box:has(#equipmentList) {
     background: rgba(5, 5, 5, 0.97);
@@ -116,12 +118,81 @@
     color: #8BFF65;
 }
 
+/* ==========================================
+   REMOVE OLD SCROLLBAR
+========================================== */
+
+.story-scrollbar {
+    display: none;
+}
+
+/* ==========================================
+   STORY LEFT / RIGHT ARROW BUTTONS
+========================================== */
+
+.story-arrow-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+
+    width: 100%;
+    margin: 18px 0;
+}
+
+.story-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 42px;
+    height: 42px;
+
+    background: #050505;
+    color: #8BFF65;
+
+    border: 2px solid #8BFF65;
+    border-radius: 0;
+
+    box-shadow: 3px 3px 0 #18351e;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.story-arrow:hover:not(:disabled) {
+    background: #8BFF65;
+    color: #050505;
+
+    transform: translateY(-3px);
+}
+
+.story-arrow:active:not(:disabled) {
+    transform: translateY(1px);
+    box-shadow: 1px 1px 0 #18351e;
+}
+
+.story-arrow:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
 @media (max-width: 600px) {
-    #equipmentList .record-item {
-        padding: 12px;
+    .story-arrow-navigation {
+        gap: 18px;
     }
 
-    #equipmentList .record-item h3 {
-        font-size: 10px;
+    .story-arrow {
+        width: 38px;
+        height: 38px;
+        font-size: 19px;
     }
 }

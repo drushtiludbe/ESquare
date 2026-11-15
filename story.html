@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="story-equipment.css">
     <link rel="stylesheet" href="audio.css">
+
     <script defer src="audio.js"></script>
     <script defer src="script.js"></script>
     <script defer src="story-equipment.js"></script>
@@ -28,7 +30,8 @@
             </span>
         </a>
 
-        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <button class="menu-toggle" type="button"
+            aria-label="Toggle navigation" aria-expanded="false">
             ☰
         </button>
 
@@ -47,9 +50,12 @@
             ← BACK TO EXPLORE
         </a>
 
+        <!-- PLANET DISPLAY -->
+
         <section class="planet-display" id="storyHero">
 
-            <img id="planetImage" src="MarsBG.jpeg" alt="Selected destination">
+            <img id="planetImage" src="MarsBG.jpeg"
+                alt="Selected destination">
 
             <div class="planet-overlay">
 
@@ -68,6 +74,28 @@
             </div>
 
         </section>
+
+       <div class="story-arrow-navigation">
+    <button
+        class="story-arrow"
+        id="storyPrev"
+        type="button"
+        aria-label="Previous slide"
+    >
+        &#8592;
+    </button>
+
+    <button
+        class="story-arrow"
+        id="storyNext"
+        type="button"
+        aria-label="Next slide"
+    >
+        &#8594;
+    </button>
+</div>
+
+        <!-- STORY EXPERIENCE -->
 
         <section class="story-experience">
 
@@ -134,7 +162,6 @@
 
                         <p class="eyebrow">
                             EQUIPMENT RECORDS
-                            
                         </p>
 
                         <dl id="equipmentSummary"></dl>
@@ -142,7 +169,9 @@
                     </div>
 
                     <div id="equipmentList" class="record-list"></div>
-<br>
+
+                    <br>
+
                     <p id="equipmentEmpty" hidden>
                         No qualifying discarded equipment records are
                         included for this destination.
@@ -151,8 +180,6 @@
                 </article>
 
             </div>
-
-
 
         </section>
 
@@ -172,6 +199,8 @@
 
     </main>
 
+    <!-- FOOTER -->
+
     <footer class="site-footer">
 
         <span>ESQUARE © 2026</span>
@@ -179,8 +208,6 @@
         <span>EQUIPMENT RECORDS</span>
 
     </footer>
-
-
 
 </body>
 
